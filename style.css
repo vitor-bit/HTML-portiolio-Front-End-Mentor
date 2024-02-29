@@ -19,11 +19,6 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .box-margin {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
@@ -32,17 +27,13 @@ body {
         margin-top: 1rem;
     }
 
-    #title-header {
+    header h1 {
         color: var(--white);
         font-size: 1.3rem;
         margin-bottom: 0.3rem;
     }
 
-    #link-github,
-    #link-instagram,
-    #link-linkedin {
-        flex-direction: row;
-        justify-content: space-between;
+    header a {
         color: var(--white);
         font-size: 0.8rem;
         margin-right: 0.5rem;
@@ -50,8 +41,7 @@ body {
     }
 
     .section-one {
-        margin-top: 20rem;
-        margin-bottom: 4rem;
+        margin: 80% 0rem 4rem;
     }
 
     .box-section-one {
@@ -61,7 +51,7 @@ body {
         flex-direction: column;
     }
 
-    #title-section-one {
+    .box-section-one h2 {
         color: var(--white);
         font-size: 2rem;
     }
@@ -71,15 +61,14 @@ body {
 
     }
 
-    #paragraph-section-one {
+    .box-section-one p {
         color: var(--light-gray);
         font-size: 0.9rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem 0rem 1.5rem;
         width: 80%;
     }
 
-    #link-section-one {
+    .box-section-one a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -89,20 +78,21 @@ body {
         font-size: 1rem;
     }
 
-    #image-section-one {
-        width: 10rem;
-        height: 17rem;
+    .section-one img {
+        width: 50%;
+        height: auto;
         background-color: var(--light-gray);
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-top: 10%;
+        margin: 10% auto auto auto;
         z-index: -1;
+    }
+
+    hr {
+        margin: 0rem 1rem 0rem;
     }
 
     .section-two {
@@ -111,53 +101,37 @@ body {
         align-items: center;
     }
 
-    .box-html-two,
-    .box-css-two,
-    .box-js-two,
-    .box-accessibility-two,
-    .box-react-two,
-    .box-sass-two {
+    .box-tec-two {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #title-html-two,
-    #title-css-two,
-    #title-js-two,
-    #title-accessibility-two,
-    #title-react-two,
-    #title-sass-two {
+    .box-tec-two h3 {
         color: var(--white);
         font-size: 2rem;
     }
 
-    #paragraph-html-two,
-    #paragraph-css-two,
-    #paragraph-js-two,
-    #paragraph-accessibility-two,
-    #paragraph-react-two,
-    #paragraph-sass-two {
+    .box-tec-two p {
         color: var(--light-gray);
         font-size: 0.9rem;
-        margin-top: 0.2rem;
-        margin-bottom: 3rem;
+        margin: 0.2rem 0rem 3rem;
     }
 
     .header-section-three {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
+        margin: 0rem 1rem 3rem;
     }
 
-    #title-header-three {
+    .header-section-three h2 {
         color: var(--white);
         font-size: 2rem;
 
     }
 
-    #link-header-three {
+    .header-section-three a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -170,46 +144,38 @@ body {
     .section-three {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .box-section-three {
         margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    #image-box-three-1,
-    #image-box-three-2,
-    #image-box-three-3,
-    #image-box-three-4,
-    #image-box-three-5,
-    #image-box-three-6 {
-        width: 18rem;
-        height: 14rem;
-
+    .section-three img {
+        width: 80%;
+        height: auto;
+        margin: 0rem 2.5rem 0rem;
     }
 
-    #title-box-three {
+    .box-section-three h4 {
         color: var(--white);
-        margin-top: 0.7rem;
-        margin-bottom: 0.7rem;
+        margin: 0.7rem 0rem 0.7rem;
+        margin-left: 2.5rem;
         font-size: 1rem;
-
     }
 
-    #text-box-three {
+    .box-section-three span {
         color: var(--light-gray);
-        margin-right: 0.5rem;
         font-size: 1rem;
+        margin-left: 2.5rem;
     }
 
     .section-four {
         background-color: var(--medium-gray);
         display: flex;
         flex-direction: column;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 2rem;
+        padding: 0rem 1rem 0rem;
     }
 
     .box-section-four {
@@ -217,17 +183,15 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-bottom: 3rem;
     }
 
-    #title-section-four {
-        margin-top: 2rem;
+    .box-section-four h2 {
+        margin: 2rem 0rem 1.5rem;
         color: var(--white);
         font-size: 2rem;
-        margin-bottom: 1.5rem;
     }
 
-    #paragraph-section-four {
+    .box-section-four p {
         width: 80%;
         color: var(--light-gray);
         font-size: 0.9rem;
@@ -235,8 +199,9 @@ body {
     }
 
 
-    #input-name,
-    #input-email {
+    .input-name,
+    .input-email,
+    .input-text {
         font-size: 0.9rem;
         background: none;
         border: none;
@@ -245,22 +210,16 @@ body {
         width: 100%;
     }
 
-    #input-text {
-        font-size: 0.9rem;
-        background: none;
-        border: none;
-        border-bottom: 0.1rem solid var(--white);
-        width: 100%;
+    .input-text {
         padding-bottom: 2rem;
     }
 
     .box-submit {
         display: flex;
         justify-content: end;
-
     }
 
-    #input-submit {
+    .input-submit {
         font-size: 0.9rem;
         background: none;
         border: none;
@@ -275,41 +234,38 @@ body {
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 3rem;
-        padding-top: 2rem;
+        padding: 2rem 0rem 3rem;
     }
 
-    #title-footer {
+    footer h2 {
         color: var(--white);
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
+    footer a {
+        color: var(--white);
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
 
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .box-margin {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1rem;
+        margin: 1rem 1rem 0rem;
     }
 
-    #title-header {
+    header h1 {
         color: var(--white);
         font-size: 1.5rem;
         margin-bottom: 0.3rem;
     }
 
-    #link-github,
-    #link-instagram,
-    #link-linkedin {
+    header a {
         flex-direction: row;
         justify-content: space-between;
         color: var(--white);
@@ -319,35 +275,31 @@ body {
     }
 
     .section-one {
-        margin-top: 3rem;
-        margin-bottom: 4rem;
+        margin: 3rem 1rem 20%;
     }
 
     .box-section-one {
         display: flex;
         flex-direction: column;
-
     }
 
-    #title-section-one {
+    .box-section-one h2 {
         color: var(--white);
         font-size: 2.3rem;
     }
 
     .style-adam {
         border-bottom: 0.3rem solid var(--light-blue);
-
     }
 
-    #paragraph-section-one {
+    .box-section-one p {
         color: var(--light-gray);
         font-size: 1rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem 0rem 1.5rem;
         width: 60%;
     }
 
-    #link-section-one {
+    .box-section-one a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -356,45 +308,42 @@ body {
         padding-bottom: 0.5rem;
         font-size: 1rem;
         margin-right: auto;
-
     }
 
-    #image-section-one {
-        width: 14rem;
-        height: 23rem;
+    .section-one img {
+        width: 35%;
+        height: auto;
         background-color: var(--light-gray);
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        right: 2%;
         margin-left: auto;
         z-index: -1;
     }
 
-    .box-section-two {
-        display: grid;
-        grid-template-columns: auto auto;
+    hr {
+        margin: 0rem 1rem 0rem;
     }
 
+    .section-two {
+        display: flex;
+        justify-content: center;
+    }
 
+    .box-section-two {
+        display: grid;
+        grid-template-columns: 50% auto;
+        margin: 0rem 1rem 0rem;
+    }
 
-    #title-html-two,
-    #title-css-two,
-    #title-js-two,
-    #title-accessibility-two,
-    #title-react-two,
-    #title-sass-two {
+    .box-tec-two h3 {
         color: var(--white);
         font-size: 2.3rem;
     }
 
-    #paragraph-html-two,
-    #paragraph-css-two,
-    #paragraph-js-two,
-    #paragraph-accessibility-two,
-    #paragraph-react-two,
-    #paragraph-sass-two {
+    .box-tec-two p {
         color: var(--light-gray);
         font-size: 1rem;
         margin-top: 0.2rem;
@@ -405,16 +354,15 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
+        margin: 0rem 1rem 3rem;
     }
 
-    #title-header-three {
+    .header-section-three h2 {
         color: var(--white);
         font-size: 2.3rem;
-
     }
 
-    #link-header-three {
+    .header-section-three a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -427,36 +375,31 @@ body {
     .section-three {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .box-section-three {
         margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    #image-box-three-1,
-    #image-box-three-2,
-    #image-box-three-3,
-    #image-box-three-4,
-    #image-box-three-5,
-    #image-box-three-6 {
-        width: 18rem;
-        height: 14rem;
-
+    .box-section-three img {
+        width: 65%;
+        height: auto;
     }
 
-    #title-box-three {
+    .box-section-three h4 {
         color: var(--white);
-        margin-top: 0.7rem;
-        margin-bottom: 0.7rem;
+        margin: 0.7rem 0rem 0.7rem;
         font-size: 1rem;
 
     }
 
-    #text-box-three {
+    .box-section-three span {
         color: var(--light-gray);
-        margin-right: 0.5rem;
+        margin-bottom: 0.3rem;
         font-size: 1rem;
     }
 
@@ -464,10 +407,7 @@ body {
         background-color: var(--medium-gray);
         display: flex;
         flex-direction: column;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 3rem;
-
+        padding: 0rem 1.5rem 3rem;
     }
 
     .box-section-four {
@@ -477,14 +417,13 @@ body {
         justify-content: center;
     }
 
-    #title-section-four {
-        margin-top: 2rem;
+    .box-section-four h2 {
+        margin: 2rem 0rem 1.5rem;
         color: var(--white);
         font-size: 2.3rem;
-        margin-bottom: 1.5rem;
     }
 
-    #paragraph-section-four {
+    .box-section-four p {
         width: 80%;
         color: var(--light-gray);
         font-size: 1rem;
@@ -492,8 +431,8 @@ body {
     }
 
 
-    #input-name,
-    #input-email {
+    .input-name,
+    .input-email {
         font-size: 1rem;
         background: none;
         border: none;
@@ -502,7 +441,7 @@ body {
         width: 100%;
     }
 
-    #input-text {
+    .input-text {
         font-size: 1rem;
         background: none;
         border: none;
@@ -514,16 +453,14 @@ body {
     .box-submit {
         display: flex;
         justify-content: end;
-
     }
 
-    #input-submit {
+    .input-submit {
         font-size: 1rem;
         background: none;
         border: none;
         border-bottom: 0.1rem solid var(--light-blue);
         color: var(--white);
-
     }
 
     footer {
@@ -532,80 +469,71 @@ body {
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 3rem;
-        padding-top: 3rem;
+        padding: 3rem 0rem 3rem;
     }
 
-    #title-footer {
+    footer h2 {
         color: var(--white);
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
+    footer a {
+        color: var(--white);
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
 
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .box-margin {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1.5rem;
+        margin: 1.5rem 2rem 0rem;
     }
 
-    #title-header {
+    header h1 {
         color: var(--white);
         font-size: 2rem;
         margin-bottom: 0.3rem;
     }
 
-    #link-github,
-    #link-instagram,
-    #link-linkedin {
+    header a {
         flex-direction: row;
         justify-content: space-between;
         color: var(--white);
         font-size: 1.2rem;
         margin-right: 0.5rem;
-
     }
 
     .section-one {
-        margin-top: 3rem;
-        margin-bottom: 8rem;
+        margin: 3rem 2rem 19%;
     }
 
     .box-section-one {
         display: flex;
         flex-direction: column;
-
     }
 
-    #title-section-one {
+    .box-section-one h2 {
         color: var(--white);
         font-size: 3.5rem;
-
     }
 
     .style-adam {
         border-bottom: 0.3rem solid var(--light-blue);
-
     }
 
-    #paragraph-section-one {
+    .box-section-one p {
         color: var(--light-gray);
         font-size: 1.3rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem 0rem 1.5rem;
         width: 60%;
     }
 
-    #link-section-one {
+    .box-section-one a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -614,65 +542,59 @@ body {
         padding-bottom: 0.5rem;
         font-size: 1.3rem;
         margin-right: auto;
-
     }
 
-    #image-section-one {
-        width: 19rem;
-        height: 31rem;
+    .section-one img {
+        width: 35%;
+        height: auto;
         background-color: var(--light-gray);
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        right: 3%;
         margin-left: auto;
         z-index: -1;
     }
 
-    .box-section-two {
-        display: grid;
-        grid-template-columns: auto auto;
+    hr {
+        margin: 0rem 2rem 0rem;
     }
 
+    .section-two {
+        display: flex;
+        justify-content: center;
+    }
 
+    .box-section-two {
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
 
-    #title-html-two,
-    #title-css-two,
-    #title-js-two,
-    #title-accessibility-two,
-    #title-react-two,
-    #title-sass-two {
+    .box-tec-two h3 {
         color: var(--white);
         font-size: 2.5rem;
     }
 
-    #paragraph-html-two,
-    #paragraph-css-two,
-    #paragraph-js-two,
-    #paragraph-accessibility-two,
-    #paragraph-react-two,
-    #paragraph-sass-two {
+    .box-tec-two p {
         color: var(--light-gray);
         font-size: 1.3rem;
-        margin-top: 0.2rem;
-        margin-bottom: 3rem;
+        margin: 0.2rem 0rem 3rem;
     }
 
     .header-section-three {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
+        margin: 0rem 2rem 3rem;
     }
 
-    #title-header-three {
+    .header-section-three h2 {
         color: var(--white);
         font-size: 3.5rem;
-
     }
 
-    #link-header-three {
+    .header-section-three a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -684,35 +606,26 @@ body {
 
     .section-three {
         display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 23rem 23rem;
+        grid-template-columns: 50% auto;
+        margin-left: 5%;
     }
 
     .box-section-three {
         margin-bottom: 4rem;
     }
 
-    #image-box-three-1,
-    #image-box-three-2,
-    #image-box-three-3,
-    #image-box-three-4,
-    #image-box-three-5,
-    #image-box-three-6 {
-        width: 22rem;
-        height: 16rem;
-
+    .section-three img {
+        width: 90%;
+        height: auto;
     }
 
-    #title-box-three {
+    .section-three h4 {
         color: var(--white);
-        margin-top: 0.7rem;
-        margin-bottom: 0.7rem;
+        margin: 0.7rem 0rem 0.7rem;
         font-size: 1.3rem;
-
     }
 
-    #text-box-three {
+    .section-three span {
         color: var(--light-gray);
         margin-right: 0.5rem;
         font-size: 1.3rem;
@@ -722,10 +635,7 @@ body {
         background-color: var(--medium-gray);
         display: flex;
         flex-direction: column;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 3rem;
-
+        padding: 0rem 1rem 3rem;
     }
 
     .box-section-four {
@@ -735,14 +645,13 @@ body {
         justify-content: center;
     }
 
-    #title-section-four {
-        margin-top: 2rem;
+    .box-section-four h2 {
         color: var(--white);
         font-size: 3.5rem;
-        margin-bottom: 1.5rem;
+        margin: 2rem 0rem 1.5rem;
     }
 
-    #paragraph-section-four {
+    .box-section-four p {
         width: 80%;
         color: var(--light-gray);
         font-size: 1.3rem;
@@ -750,8 +659,8 @@ body {
     }
 
 
-    #input-name,
-    #input-email {
+    .input-name,
+    .input-email {
         font-size: 1.3rem;
         background: none;
         border: none;
@@ -760,7 +669,7 @@ body {
         width: 100%;
     }
 
-    #input-text {
+    .input-text {
         font-size: 1.3rem;
         background: none;
         border: none;
@@ -772,16 +681,14 @@ body {
     .box-submit {
         display: flex;
         justify-content: end;
-
     }
 
-    #input-submit {
+    .input-submit {
         font-size: 1.3rem;
         background: none;
         border: none;
         border-bottom: 0.1rem solid var(--light-blue);
         color: var(--white);
-
     }
 
     footer {
@@ -790,81 +697,75 @@ body {
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 3rem;
-        padding-top: 3rem;
+        padding: 3rem 0rem 3rem;
     }
 
-    #title-footer {
+    footer h2 {
         color: var(--white);
         font-size: 2rem;
         margin-bottom: 1rem;
     }
 
-
+    footer a {
+        justify-content: space-between;
+        color: var(--white);
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .box-margin {
-        margin-left: 8rem;
-        margin-right: 8rem;
-
-    }
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1.5rem;
+        margin: 1.5rem 10% 0rem;
     }
 
-    #title-header {
+    header h1 {
         color: var(--white);
         font-size: 2rem;
         margin-bottom: 0.3rem;
     }
 
-    #link-github,
-    #link-instagram,
-    #link-linkedin {
+    header a {
         flex-direction: row;
         justify-content: space-between;
         color: var(--white);
         font-size: 1.2rem;
         margin-right: 0.5rem;
-
     }
 
     .section-one {
-        margin-top: 3rem;
-        margin-bottom: 8rem;
+        margin: 3rem 10% 9%;
+    }
+
+    hr {
+        margin: 0 10% 0;
     }
 
     .box-section-one {
         display: flex;
         flex-direction: column;
-
     }
 
-    #title-section-one {
+    .box-section-one h2 {
         color: var(--white);
         font-size: 3.5rem;
-
     }
 
     .style-adam {
         border-bottom: 0.3rem solid var(--light-blue);
-
     }
 
-    #paragraph-section-one {
+    .box-section-one p {
         color: var(--light-gray);
         font-size: 1.3rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem 0rem 1.5rem;
         width: 60%;
     }
 
-    #link-section-one {
+    .box-section-one a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -873,66 +774,54 @@ body {
         padding-bottom: 0.5rem;
         font-size: 1.3rem;
         margin-right: auto;
-
     }
 
-    #image-section-one {
-        width: 19rem;
-        height: 31rem;
+    .section-one img {
+        width: 25%;
+        height: auto;
         background-color: var(--light-gray);
         position: absolute;
         top: 0;
-        bottom: 30%;
+        bottom: 0;
         left: 0;
-        right: 0;
-        margin-bottom: auto;
-        margin-left: 65%;
+        right: 10%;
+        margin-left: auto;
         z-index: -1;
+    }
+
+    .section-two {
+        margin: 0 10% 0;
     }
 
     .box-section-two {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 40% 25% 40%;
     }
 
-
-
-    #title-html-two,
-    #title-css-two,
-    #title-js-two,
-    #title-accessibility-two,
-    #title-react-two,
-    #title-sass-two {
+    .box-tec-two h3 {
         color: var(--white);
         font-size: 3rem;
     }
 
-    #paragraph-html-two,
-    #paragraph-css-two,
-    #paragraph-js-two,
-    #paragraph-accessibility-two,
-    #paragraph-react-two,
-    #paragraph-sass-two {
+    .box-tec-two p {
         color: var(--light-gray);
         font-size: 1.3rem;
-        margin-top: 0.2rem;
-        margin-bottom: 3rem;
+        margin: 0.2rem 0rem 3rem;
     }
 
     .header-section-three {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
+        margin: 0rem 10% 3rem;
     }
 
-    #title-header-three {
+    .header-section-three h2 {
         color: var(--white);
         font-size: 3.5rem;
-
     }
 
-    #link-header-three {
+    .header-section-three a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -946,33 +835,26 @@ body {
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-columns: 23rem 23rem;
+        grid-template-columns: 40% 40%;
     }
 
     .box-section-three {
         margin-bottom: 4rem;
+        margin-left: 6%;
     }
 
-    #image-box-three-1,
-    #image-box-three-2,
-    #image-box-three-3,
-    #image-box-three-4,
-    #image-box-three-5,
-    #image-box-three-6 {
-        width: 22rem;
-        height: 16rem;
-
+    .box-section-three img {
+        width: 95%;
+        height: auto;
     }
 
-    #title-box-three {
+    .box-section-three h4 {
         color: var(--white);
-        margin-top: 0.7rem;
-        margin-bottom: 0.7rem;
+        margin: 0.7rem 0 0.7rem;
         font-size: 1.3rem;
-
     }
 
-    #text-box-three {
+    .box-section-three span {
         color: var(--light-gray);
         margin-right: 0.5rem;
         font-size: 1.3rem;
@@ -982,11 +864,7 @@ body {
         background-color: var(--medium-gray);
         display: flex;
         justify-content: space-between;
-        padding-left: 8rem;
-        padding-right: 8rem;
-        padding-bottom: 5rem;
-        padding-top: 5rem;
-
+        padding: 5rem 8rem 5rem;
     }
 
     .box-section-four {
@@ -995,22 +873,20 @@ body {
         width: 40%;
     }
 
-    #title-section-four {
+    .box-section-four h2 {
         color: var(--white);
         font-size: 3.5rem;
         margin-bottom: 1.5rem;
     }
 
-    #paragraph-section-four {
+    .box-section-four p {
         color: var(--light-gray);
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
 
-
-
-    #input-name,
-    #input-email {
+    .input-name,
+    .input-email {
         font-size: 1.3rem;
         background: none;
         border: none;
@@ -1020,7 +896,7 @@ body {
         width: 100%;
     }
 
-    #input-text {
+    .input-text {
         font-size: 1.3rem;
         background: none;
         border: none;
@@ -1032,16 +908,14 @@ body {
     .box-submit {
         display: flex;
         justify-content: end;
-
     }
 
-    #input-submit {
+    .input-submit {
         font-size: 1.3rem;
         background: none;
         border: none;
         border-bottom: 0.1rem solid var(--light-blue);
         color: var(--white);
-
     }
 
     footer {
@@ -1049,84 +923,73 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding: 3rem 8rem 3rem;
     }
 
-    #title-footer {
+    footer h2 {
         color: var(--white);
         font-size: 2rem;
-        margin-bottom: 1rem;
     }
 
-
+    footer a {
+        flex-direction: row;
+        justify-content: space-between;
+        color: var(--white);
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
 }
 
 @media (min-width: 1201px) {
-    .box-margin {
-        margin-left: 12rem;
-        margin-right: 12rem;
-        position: relative;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 1.5rem;
+        margin: 0 12% 0;
     }
 
-    #title-header {
+    header h1 {
         color: var(--white);
         font-size: 2rem;
         margin-bottom: 0.3rem;
     }
 
-    #link-github,
-    #link-instagram,
-    #link-linkedin {
+    header a {
         flex-direction: row;
         justify-content: space-between;
         color: var(--white);
         font-size: 1.2rem;
         margin-right: 0.5rem;
-
     }
 
     .section-one {
-        margin-top: 3rem;
-        margin-bottom: 10rem;
-        
+        margin: 3rem 0 10rem;
     }
 
     .box-section-one {
         display: flex;
         flex-direction: column;
-
+        margin: 0 12% 0;
     }
 
-    #title-section-one {
+    .box-section-one h2 {
         color: var(--white);
-        font-size: 5rem;
-
+        font-size: 4rem;
     }
 
     .style-adam {
         border-bottom: 0.3rem solid var(--light-blue);
-
     }
 
-    #paragraph-section-one {
+    .box-section-one p {
         color: var(--light-gray);
         font-size: 1.3rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem 0 1.5rem;
         width: 50%;
     }
 
-    #link-section-one {
+    .box-section-one a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -1135,66 +998,59 @@ body {
         padding-bottom: 0.5rem;
         font-size: 1.3rem;
         margin-right: auto;
-
     }
 
-    #image-section-one {
-        width: 20rem;
-        height: 34rem;
+    .section-one img {
+        width: 21rem;
+        height: auto;
         background-color: var(--light-gray);
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        right: 12%;
         margin-bottom: auto;
         margin-left: auto;
         z-index: -1;
     }
 
-    .box-section-two {
-        display: grid;
-        grid-template-columns: auto auto auto;
+    hr {
+        margin: 0 12% 0;
     }
 
+    .section-two {
+        margin: 0 12% 0;
+    }
 
+    .box-section-two {
+        display: grid;
+        grid-template-columns: 40% 25% 40%;
+    }
 
-    #title-html-two,
-    #title-css-two,
-    #title-js-two,
-    #title-accessibility-two,
-    #title-react-two,
-    #title-sass-two {
+    .box-tec-two h3 {
         color: var(--white);
         font-size: 3rem;
     }
 
-    #paragraph-html-two,
-    #paragraph-css-two,
-    #paragraph-js-two,
-    #paragraph-accessibility-two,
-    #paragraph-react-two,
-    #paragraph-sass-two {
+    .box-tec-two p {
         color: var(--light-gray);
         font-size: 1.3rem;
-        margin-top: 0.2rem;
-        margin-bottom: 3rem;
+        margin: 0.2rem 0 3rem;
     }
 
     .header-section-three {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
+        margin: 0 12% 3rem;
     }
 
-    #title-header-three {
+    .header-section-three h2 {
         color: var(--white);
         font-size: 3.5rem;
-
     }
 
-    #link-header-three {
+    .header-section-three a {
         color: var(--white);
         text-decoration: none;
         background: none;
@@ -1208,33 +1064,26 @@ body {
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-columns: 28rem 28rem;
+        grid-template-columns: 34rem 34rem;
+
     }
 
     .box-section-three {
         margin-bottom: 4rem;
     }
 
-    #image-box-three-1,
-    #image-box-three-2,
-    #image-box-three-3,
-    #image-box-three-4,
-    #image-box-three-5,
-    #image-box-three-6 {
-        width: 25rem;
-        height: 17rem;
-
+    .box-section-three img {
+        width: 32rem;
+        height: auto;
     }
 
-    #title-box-three {
+    .box-section-three h4 {
         color: var(--white);
-        margin-top: 0.7rem;
-        margin-bottom: 0.7rem;
+        margin: 0.7rem 0 0.7rem;
         font-size: 1.3rem;
-
     }
 
-    #text-box-three {
+    .box-section-three span {
         color: var(--light-gray);
         margin-right: 0.5rem;
         font-size: 1.3rem;
@@ -1244,11 +1093,7 @@ body {
         background-color: var(--medium-gray);
         display: flex;
         justify-content: space-between;
-        padding-left: 8rem;
-        padding-right: 8rem;
-        padding-bottom: 5rem;
-        padding-top: 5rem;
-
+        padding: 5rem 12% 5rem;
     }
 
     .box-section-four {
@@ -1257,22 +1102,20 @@ body {
         width: 40%;
     }
 
-    #title-section-four {
+    .box-section-four h2 {
         color: var(--white);
         font-size: 3.5rem;
         margin-bottom: 1.5rem;
     }
 
-    #paragraph-section-four {
+    .box-section-four p {
         color: var(--light-gray);
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
 
-
-
-    #input-name,
-    #input-email {
+    .input-name,
+    .input-email {
         font-size: 1.3rem;
         background: none;
         border: none;
@@ -1282,7 +1125,7 @@ body {
         width: 100%;
     }
 
-    #input-text {
+    .input-text {
         font-size: 1.3rem;
         background: none;
         border: none;
@@ -1294,16 +1137,14 @@ body {
     .box-submit {
         display: flex;
         justify-content: end;
-
     }
 
-    #input-submit {
+    .input-submit {
         font-size: 1.3rem;
         background: none;
         border: none;
         border-bottom: 0.1rem solid var(--light-blue);
         color: var(--white);
-
     }
 
     footer {
@@ -1311,18 +1152,20 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding: 8rem 12% 8rem;
     }
 
-    #title-footer {
+    footer h2 {
         color: var(--white);
         font-size: 2rem;
         margin-bottom: 1rem;
     }
 
-
-
+    footer a {
+        flex-direction: row;
+        justify-content: space-between;
+        color: var(--white);
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
 }
